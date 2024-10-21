@@ -8,6 +8,7 @@ const generatePassword = (length, options) => {
     const specialChars = "!@#$%^&*()";
 
     let characterSet = "";
+<<<<<<< HEAD
 
     // TODO: Create a variable for the character set based on selected option
 
@@ -23,8 +24,11 @@ const generatePassword = (length, options) => {
         const randomIndex = Math.floor(Math.random() * characterSet.length);
         password += characterSet[randomIndex];
     }
+=======
+>>>>>>> 9d5bb822f6e8f067f8255ad6a015a400e01a1b7f
 
-    // TODO: Generate the password based on the selected criteria
+    // TODO: Create a variable for the character set based on selected option
+    
     return password;
 };
 
