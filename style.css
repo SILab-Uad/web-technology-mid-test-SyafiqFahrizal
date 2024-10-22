@@ -1,54 +1,86 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #e0e7ff; /* Background color */
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradasi biru yang cerah */
 }
 
 .container {
     text-align: center;
     padding: 30px;
-    background-color: #ffffff; /* Background color for container */
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih lebih terang */
+    border-radius: 20px; /* Sudut lebih melengkung */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2); /* Bayangan lebih dalam */
     width: 90%;
     max-width: 400px;
 }
 
-/* TODO: Add styles for labels, inputs, buttons, and output text */
 h1 {
-    font-size: 2.2em;
+    font-size: 2.5em; /* Ukuran font lebih besar */
     margin-bottom: 20px;
-    color: #4a4a4a; /* Header color */
-    font-style: italic;
+    color: #333;
+    font-weight: bold; /* Font tebal */
 }
 
-
-/* Add more styles here as needed */
-
 label {
+    font-size: 1em;
+    color: #555; /* Warna teks label lebih lembut */
     display: block;
     margin: 10px 0;
 }
 
-button {
+input[type="number"] {
+    width: calc(20% - 22px);
+    padding: 10px;
     margin: 10px 0;
-    padding: 10px 15px;
+    border: 2px solid #4facfe; /* Warna border sesuai dengan gradasi */
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #00f2fe; /* Mengubah warna border pada fokus */
+    outline: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #00f2fe; /* Warna tombol */
+    color: white;
     border: none;
     border-radius: 5px;
-    background-color: #4a90e2;
-    color: white;
     cursor: pointer;
-    font-size: 1em;
+    margin-top: 10px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #357ab8;
+    background-color: #4facfe; /* Warna tombol saat hover */
 }
 
 #passwordOutput {
     margin: 20px 0;
-    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    background-color: #e0f7fa; /* Latar belakang output yang lebih cerah */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #4facfe; /* Warna border output */
+    word-break: break-all;
+}
+
+#copyBtn {
+    margin-top: 15px;
+    background-color: #4facfe; /* Warna tombol salin */
+    transition: background-color 0.3s;
+}
+
+#copyBtn:hover {
+    background-color: #00f2fe; /* Warna tombol salin saat hover */
 }
